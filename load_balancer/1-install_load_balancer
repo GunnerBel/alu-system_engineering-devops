@@ -16,8 +16,8 @@ frontend bela-frontend
         default_backend bela-backend
 backend bela-backend
         balance roundrobin
-        server backend1 18.206.171.105 check
-        server backend2 18.206.171.105 check
+        server backend1 98.80.11.37 check
+        server backend2 52.91.49.196 check
 "
 echo "$server_config" | sudo tee /etc/haproxy/haproxy.cfg
 
